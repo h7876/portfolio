@@ -10,7 +10,7 @@ $formcontent="From: $name \n Message: $message";
 $recipent = "hwoolsportfolio@outlook.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
-mail($recipent, $subject, $formcontent, $mailheader) or die("Error!" + $error);
+mail($recipent, $subject, $formcontent, $mailheader) or die("Error!" + $php_errormsg);
 echo "<script type='text/javascript'>alert('Thank you!');</script>";
 
 ?>
