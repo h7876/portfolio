@@ -1,3 +1,7 @@
+<html>
+    <head>
+    <meta http-equiv="refresh" content="1;url=index.html">
+    </head>
 <?php 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -7,6 +11,7 @@ $recipent = "hwoolsportfolio@outlook.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipent, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+echo "<script type='text/javascript'>alert('Thank you!');</script>";
 
 ?>
+</html>
